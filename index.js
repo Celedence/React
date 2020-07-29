@@ -1,10 +1,14 @@
+function mood(){
+    const moods = ['angry','sad','happy','hungry'];
+    return moods [Math.floor(Math.random() *moods.length)];
+}
+
+
 class Hello extends React.Component {
     render(){
         return (
         <div>
-            <h1>Hello There</h1>
-            <h1>Hello There</h1>
-            <h1>Hello There</h1>
+            <h1>My mood is {mood()}</h1>
         </div>
         );
     }
